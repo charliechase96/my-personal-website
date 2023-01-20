@@ -1,6 +1,17 @@
-/*
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
+let currentIndex = 1;
+displaySlides(currentIndex);
 
-document.querySelector("body").appendChild(h2);
-*/
+function setSlides(num) {
+    displaySlides(currentIndex += num);
+}
+
+function displaySlides(num) {
+    let x;
+    const slides = document.getElementsByClassName("imageSlides");
+    if (num > slides.length) { currentIndex = 1 }
+    if (num < 1) { currentIndex = slides.length }
+    for (x = 0; x < slides.length; x++) {
+        slides[x].style.display = "none";
+    }
+    slides[currentIndex - 1].style.display = "block";
+}

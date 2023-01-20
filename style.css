@@ -83,33 +83,41 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Mika slideshow captions */
 .MikaCaptions {
     text-align: center;
     padding: 25px;
     color: white;
 }
 
+/* general paragraph style */
 p {
     color: white;
     float: right;
     max-width: 1050px;
     font-size: larger;
     line-height: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* headshot margin */
 #headshot {
     margin: 0px 15px 15px 0px;
 }
 
+/* headshot caption */
 #headshotCaption {
     color: white;
     text-align: center;
+    padding: 25px;
 }
 
+/*headshot and caption together*/
 #headshotAndCaption {
     float: left;
 }
 
+/* Mika page hyperlink stylized */
 #MikaLink:hover {
     color:aquamarine;
     text-decoration: none;
@@ -123,4 +131,20 @@ p {
 #MikaLink:visited {
     color:rgb(72, 148, 123);
     text-decoration: none;
+}
+
+#frontPageHeading {
+    color: white;
+    font-size:x-large;
+    line-height: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 45px;
+}
+
+/* contact form styling */
+
+.container {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 20px;
 }
